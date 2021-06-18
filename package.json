@@ -1,0 +1,19 @@
+{
+  "name": "sistema-alfa",
+  "version": "1.0.0",
+  "description": "Mi propia app desarrollada como gestor de todos mis proyectos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matlab98/Proyecto.git"
+  },
+  "author": "Hilder Arrieta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matlab98/Proyecto/issues"
+  },
+  "homepage": "https://github.com/matlab98/Proyecto#readme"
+}
