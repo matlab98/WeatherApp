@@ -1,0 +1,1 @@
+A simple phones catalogue. It gets data from an API an shows a list of available mobile phones.
