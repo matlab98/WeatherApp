@@ -77,3 +77,5 @@ SELECT name, [text]
  ON 
  o.id=c.id
 WHERE xtype = 'P'
+
+insert into country ( country) values ('Colombia');

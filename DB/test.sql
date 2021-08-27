@@ -5,7 +5,7 @@ GO
 
 use model;
 use sky;
-SELECT * FROM country
+SELECT * FROM COUNTRY;
 
 
 
