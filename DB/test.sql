@@ -49,3 +49,6 @@ AS
 GO  
 
 EXEC getData @City = 'London';
+
+SELECT *
+  FROM [sys].[dm_exec_sessions]
