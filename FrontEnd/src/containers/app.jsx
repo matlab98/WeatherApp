@@ -8,8 +8,9 @@ import Daily from '../components/daily';
 import Menu from '../components/menu';
 import Report from '../components/report';
 import Watch from '../components/watch';
-
+import AppContext from "../context/AppContext";
 export const App = () => {
+    
     return (
         <div>
             

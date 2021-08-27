@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{F7DACE3C-A05A-446D-8013-3E15B1A386A0}|">
+  <MonoDevelop.Ide.ItemProperties.MVCSky PreferredExecutionTarget="/Applications/Opera.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MVCSky" expanded="True">
+            <Node name="MVCSky" expanded="True">
+              <Node name="Models" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

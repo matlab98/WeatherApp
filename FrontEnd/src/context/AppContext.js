@@ -1,12 +1,12 @@
 
-import http from "./http-common";
+import https from "./http-common";
 
 const getAll = () => {
-  return http.get(`/`);
+  return https.get(`/`);
 };
 
 const findByTitle = (title, dato) => {
-  return http.get(`/${title}?title=${dato}`);
+  return https.get(`/${title}?title=${dato}`);
 };
 
 export default {
