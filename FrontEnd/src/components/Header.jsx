@@ -57,15 +57,12 @@ width: auto;
 function App() {
 
     const currentLocation = (e) => {
-
-
         navigator.geolocation.getCurrentPosition(function (position) {
             var {latitud, longitud}='';
             latitud = position.coords.latitude;
             longitud = position.coords.longitude;
             console.log("Latitude is :", latitud);
             console.log("Longitude is :", longitud);
-           
         });
        
     }
@@ -93,12 +90,12 @@ function App() {
 
     }
 
-
+/*
     const [text, setText] = useState('');
 
     const resources = useResources(text);
     var hintArray = []
-    resources.map(a => hintArray.push(a.place_name))
+    resources.map(a => hintArray.push(a.place_name))*/
 
     return (
         <div>
@@ -109,11 +106,7 @@ function App() {
                         <StyledButton src={Clocation} alt="Current location button" onClick={currentLocation} />
                     </StyledCont>
                     <StyledSearcher>
-                        <Hint className="searcher" options={hintArray} allowTabFill>
-                            <input className="searcher" type="text"
-                                value={text} onChange={handleInputChange} placeholder="Bogotá, Colombia" name="location"
-                            />
-                        </Hint>
+                        
                     </StyledSearcher>
                     <StyledCont>
                         <StyledButton src={search} alt="Search button" type="submit" />

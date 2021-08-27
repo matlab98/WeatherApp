@@ -2,8 +2,6 @@ import React, { Component} from "react";
 import { render } from "react-dom";
 import Header from '../components/Header';
 import Footer from '../components/footer';
-import Minute from '../components/minute';
-import Htoh from '../components/htoh';
 import Daily from '../components/daily';
 import Menu from '../components/menu';
 import Report from '../components/report';
@@ -13,7 +11,10 @@ export const App = () => {
     
     return (
         <div>
-            
+            <Header />
+
+            <Footer />
+
         </div>
     )
 }
