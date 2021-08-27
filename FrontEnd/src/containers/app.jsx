@@ -7,11 +7,23 @@ import Htoh from '../components/htoh';
 import Daily from '../components/daily';
 import Menu from '../components/menu';
 import Report from '../components/report';
-import Prueba from '../components/prueba';
-import axios from "axios";
+import Watch from '../components/watch';
 
-class App extends Component {
-    constructor(props) {
+export const App = () => {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+
+export default App;
+
+
+
+/**
+ * 
+ * constructor(props) {
         super();
         this.state = {
             dataNow: [],
@@ -27,7 +39,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        axios.get(`https://api.darksky.net/forecast/88030114c5e47763a011a75e7a10c633/4.625184,-74.081935?lang=es&units=auto`)
+        axios.get(``)
             .then(response => {
 
                 this.setState({
@@ -44,12 +56,22 @@ class App extends Component {
             });
 
     }
+ */
+
+
+
+
+
+
+
+    /**
+     * 
+     * class App extends Component {
+    
 
     render() {
-        const result = [this.state.dataNow]
-        const minute = [this.state.dataNextMin]
-        const hour = [this.state.dataNextHours]
-        const days = [this.state.dataNextDays]
+        
+        const { result, minute, hour, days } = [this.state]
 
         console.log(result)
         return (
@@ -82,10 +104,11 @@ class App extends Component {
                     </>
                 )
                 }
+                <Watch />
                 <Footer />
 
             </div>
         );
     }
 }
-export default App;
+     */

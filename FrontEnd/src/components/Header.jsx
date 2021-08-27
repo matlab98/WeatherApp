@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'
 import { Hint } from 'react-autocomplete-hint';
 import useResources from '../context/AppContext'
 import styled from 'styled-components';
@@ -70,11 +69,7 @@ function App() {
         });
        
     }
-    /*
-    var [storedObject, setObject] = '';
-    [storedObject, setObject] = useLocalStorage("latitud", latitud);
-    [storedObject, setObject] = useLocalStorage("longitud", longitud);
-*/
+
     const [datos, setDatos] = useState({
         location: ''
     })
