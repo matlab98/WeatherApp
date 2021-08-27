@@ -1,6 +1,7 @@
 create database sky;
+
 use sky;
-CREATE TABLE CITY
+CREATE TABLE COUNTRY
 (
         id int NOT NULL IDENTITY (1,1) PRIMARY KEY,
         country VARCHAR
@@ -31,24 +32,48 @@ CREATE TABLE weather_status
 CREATE TABLE weather_forecast_lg
 (
         id int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-        wind_speed VARCHAR
-    (255) NOT NULL,
-            wind_degree VARCHAR
-    (255) NOT NULL,
-            wind_dir VARCHAR
-    (255) NOT NULL,
-            pressure VARCHAR
-    (255) NOT NULL,
-             precip VARCHAR
-    (255) NOT NULL,
+        wind_speed decimal NOT NULL,
+            wind_degree decimal NOT NULL,
+            wind_dir char(2) NOT NULL,
+            pressure decimal NOT NULL,
+             precip decimal NOT NULL,
             humidity VARCHAR
     (255) NOT NULL,
             cloud_cover VARCHAR
     (255) NOT NULL,
-            feelslike number(2) NOT NULL,
-            uv_index number(2,2) NOT NULL,
-            visibility number(2,2) NOT NULL,
-            city_id int
-    (255) NOT NULL,
+            feelslike varchar(255) NOT NULL,
+            uv_index decimal NOT NULL,
+            visibility decimal NOT NULL,
+            city_id INT NOT NULL REFERENCES city(id) ON DELETE CASCADE,
             now_timestamp timestamp,
+            weather_status_id INT NOT NULL REFERENCES weather_status(id) ON DELETE CASCADE
 );
+
+CREATE TABLE news_lg
+(
+        id int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+        author VARCHAR (255) NOT NULL,
+    city_id INT NOT NULL REFERENCES city(id) ON DELETE CASCADE,
+    title VARCHAR
+    (255) NOT NULL,
+    descrip VARCHAR
+    (255) NOT NULL,
+    urltoNew VARCHAR
+    (255) NOT NULL,
+    urlToImage VARCHAR
+    (255) NOT NULL,
+    publishedAt VARCHAR
+    (255) NOT NULL,
+    content VARCHAR
+    (255) NOT NULL,
+    
+);
+
+SELECT * FROM [INFORMATION_SCHEMA].[TABLES]
+
+SELECT name, [text]
+ FROM sysobjects o
+ INNER JOIN syscomments c
+ ON 
+ o.id=c.id
+WHERE xtype = 'P'
